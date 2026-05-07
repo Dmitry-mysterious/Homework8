@@ -17,9 +17,27 @@ void main() {
     //Задача 2
     System.out.println("--|| Задача 2 ||--");
 
-    System.out.println("Массив 1: " + nums[0] + ", " + nums[1] + ", " + nums[2]);
-    System.out.println("Массив 2: " + nums2[0] + ", " + nums2[1] + ", " + nums2[2]);
-    System.out.println("Массив 3: " + nums3[0] + ", " + nums3[1] + ", " + nums3[2] + ", " + nums3[3]);
+    System.out.print("Массив 1: ");
+    for (int i = 0; i < nums.length; i++) {
+        System.out.print(nums[i]);
+        if (i < nums.length - 1) System.out.print(", ");
+    }
+
+    System.out.println();
+
+    System.out.print("Массив 2: ");
+    for (int i = 0; i < nums2.length; i++) {
+        System.out.print(nums2[i]);
+        if (i < nums2.length - 1) System.out.print(", ");
+    }
+
+    System.out.println();
+
+    System.out.print("Массив 3: ");
+    for (int i = 0; i < nums3.length; i++) {
+        System.out.print(nums3[i]);
+        if (i < nums3.length - 1) System.out.print(", ");
+    }
 
     System.out.println();
 
@@ -27,9 +45,27 @@ void main() {
     //Задача 3
     System.out.println("--|| Задача 3 ||--");
 
-    System.out.println("Массив 1: " + nums[2] + ", " + nums[1] + ", " + nums[0]);
-    System.out.println("Массив 2: " + nums2[2] + ", " + nums2[1] + ", " + nums2[0]);
-    System.out.println("Массив 3: " + nums3[3] + ", " + nums3[2] + ", " + nums3[1] + ", " + nums3[0]);
+    System.out.print("Массив 1: ");
+    for (int i = nums.length - 1; i >= 0; i--) {
+        System.out.print(nums[i]);
+        if (i > 0) System.out.print(", ");
+    }
+
+    System.out.println();
+
+    System.out.print("Массив 2: ");
+    for (int i = nums2.length - 1; i >= 0; i--) {
+        System.out.print(nums2[i]);
+        if (i > 0) System.out.print(", ");
+    }
+
+    System.out.println();
+
+    System.out.print("Массив 3: ");
+    for (int i = nums3.length - 1; i >= 0; i--) {
+        System.out.print(nums3[i]);
+        if (i > 0) System.out.print(", ");
+    }
 
     System.out.println();
 
